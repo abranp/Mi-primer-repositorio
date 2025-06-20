@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: gray;
+    padding: 15px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.logo{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+
+.imglogo{
+    width: 4%;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    margin: 0 0 0 15px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    align-items: auto;
+}
+.menu li a:hover{
+    color: skyblue;
+
+}
+.menu-mobil{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-mobil span{
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+}
+@media(max-width:768px){
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+
+    }
+    .menu-mobil{
+        display: flex;
+
+    }
+    .menu.active{
+        display: flex;
+
+    }
+    .menu li{
+        text-align: center;
+        margin:10px
+    }
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.7);
+}
+
+
+.juegos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 62%;
+    margin: auto;
+    background-color: #f0f0f0;
+}
+
+.juego{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.juego img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.btnbuy{
+    background: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    width: 47%;
+    /* o 90 px ta iwal de wapo */
+}
+
+.txtjuego{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.txth2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 15px;
+}
