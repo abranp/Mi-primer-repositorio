@@ -5,6 +5,11 @@
     
 
 }
+body{
+    background: url(../img/fondogame.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
